@@ -1,0 +1,47 @@
+{
+	"Carrier": {
+		"serialPort": "/dev/ttyUART9",
+		"baud": 9600,
+		"flowControl": 0,
+		"databits": 8,
+		"stopbits": 1,
+		"parity": "E",
+		"command": "683B0060000000000000070000000000F004C8F000E8000000000000000000000005001400FEFEFEFE6807000000000068110433333433B9169416"
+	},
+	"Alter": {
+		"serialPort": "/dev/ttyUART1",
+		"baud": 9600,
+		"flowControl": 0,
+		"databits": 8,
+		"stopbits": 1,
+		"parity": "E",
+		"command":"68111111111111681104333434351B16"
+	},
+	"RS232": {
+		"serialPort1": "/dev/ttyUART7",
+		"serialPort2": "/dev/ttyUART8",
+		"baud": 115200,
+		"flowControl": 0,
+		"databits": 8,
+		"stopbits": 1,
+		"parity": "N",
+		"command":"1234"
+	},
+	"RS485": {
+		"serialPort1": "/dev/ttyUART2",
+		"serialPort2": "/dev/ttyUART4",
+		"serialPort3": "/dev/ttyUART5",
+		"serialPort4": "/dev/ttyUART6",
+		"serialPort5": "/dev/ttyUART7",
+		"serialPort6": "/dev/ttyUART8",
+		"baud": 115200,
+		"flowControl": 0,
+		"databits": 8,
+		"stopbits": 1,
+		"parity": "N",
+		"command":"1234"
+	},
+	"Chip": {
+		"path": "./helloworld"
+	}
+}

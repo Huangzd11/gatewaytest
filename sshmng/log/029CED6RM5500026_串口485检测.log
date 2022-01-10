@@ -1,0 +1,30 @@
+配置文件:
+{
+	"serialPortA": "/dev/ttyUART4",
+	"serialPortB": "/dev/ttyUART2",
+	"baud": 9600,
+	"commandA":"Hello PortB!",
+	"commandB":"Hello PortA!"
+}
+
+fd:3, baud:9600, flowControl:0, databits:8, stopbits:1, parity:78
+fd:4, baud:9600, flowControl:0, databits:8, stopbits:1, parity:78
+串口 A 发送数据:Hello PortB!
+串口 B 收到数据:Hello PortB!, 数据长度:12
+
+串口 B 发送数据:Hello PortA!
+串口 A 收到数据:Hello PortA!, 数据长度:12
+
+串口 A 发送数据:Hello PortB!
+串口 B 收到数据:Hello PortB!, 数据长度:12
+
+串口 B 发送数据:Hello PortA!
+串口 A 收到数据:Hello PortA!, 数据长度:12
+
+串口 A 发送数据:Hello PortB!
+串口 B 收到数据:Hello PortB!, 数据长度:12
+
+串口 B 发送数据:Hello PortA!
+串口 A 收到数据:Hello PortA!, 数据长度:12
+
+串口485模式测试成功

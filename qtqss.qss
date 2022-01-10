@@ -1,0 +1,144 @@
+/* QWidget#frmLogin,QWidget#frmPopup,QWidget#frmHostInfo,QWidget#frmLogout,QWidget#frmConfig,QWidget#frmData,QWidget#frmDefence,QWidget#frmHost,QWidget#frmMain,QWidget#frmPwd,QWidget#frmSelect,QWidget#frmMessageBox{ */
+/* border:1px solid #1B89CA; */
+/* border-radius:0px; */
+/* } */
+
+
+/* .QFrame{ 
+border:1px solid #5CACEE; 
+border-radius:5px; 
+ } 
+*/
+/* QWidget#widget_title{ */
+/* background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #1B89CA, stop:1 #1077B5); */
+/* } */
+
+
+/* QLabel#lab_Ico,QLabel#lab_Title{ */
+/* border-radius:0px; */
+/* color: #F0F0F0; */
+/* background-color:rgba(30,30,30,100); */
+/* border-style:none; */
+/* } */
+
+/*QWidget*/
+QWidget
+{
+     color:black;
+    background-color:#F0F0F0;
+    border: 1px solid rgb(15 , 150 , 255);
+    border-radius:1px;
+}
+
+/*button设置*/
+
+QPushButton{
+    color:black;
+    background-color:#CAE1FF;
+    border: 1px solid rgb(15 , 150 , 255);
+    border-radius:10px;
+}
+
+
+QPushButton:hover
+{
+    color:black;
+    background-color:#5CACEE;
+    border: 1px solid #5CACEE;
+      top: 2px;
+    left: 2px;
+}
+
+QPushButton:pressed{
+    color:black;
+    background-color:#1874CD;
+    border: 1px solid rgb(15 , 150 , 255);
+    top: 2px;
+    left: 2px;
+}
+QPushButton:disabled{
+    color:black;
+    background-color:#F2F2F2;
+    border: 1px solid #F2F2F2;
+      top: 2px;
+    left: 2px;
+}
+
+QLabel
+{
+    background-color:#63B8FF;
+}
+
+/*普通的状态*/
+
+QLineEdit
+{
+/*边界1像素 实线 颜色rgb  或者border:none 没有边界*/
+border:1px solid rgb(180, 180, 180);
+/*背景的颜色*/
+background: rgb(255,255,255);
+/*边角4像素圆滑*/
+border-radius: 4px;
+}
+
+/*QTableView 左上角样式*/
+QTableView QTableCornerButton::section {
+   /*  background: red;
+    border: 2px outset red;*/
+    color: red;
+     background-color:#63B8FF;
+    border: 3px solid #63B8FF;
+    border-radius:0px;
+    border-color:#5CACEE;
+ }
+
+ QTableView {
+    color: black;                                       /*表格内文字颜色*/
+    gridline-color: #5CACEE;                              /*表格内框颜色*/
+     background-color:#CAE1FF;                           /*表格内背景色*/
+    alternate-background-color: rgb(64, 64, 64);
+    selection-color: white;                             /*选中区域的文字颜色*/
+    selection-background-color:#5CACEE;                  /*选中区域的背景色*/
+    border: 2px groove gray;
+    border-radius: 0px;
+    border-top-color: rgba(0, 0, 0, 0);
+    padding: 1px 1px;
+}
+
+QHeaderView {
+    color: black;
+    font: bold 10pt;
+    background-color:#63B8FF;
+    border: 0px solid rgb(144, 144, 144);
+    border:0px solid rgb(191,191,191);
+    border-left-color: rgba(255, 255, 255, 0);
+    border-top-color: rgba(255, 255, 255, 0);
+    border-radius:0px;
+    min-height:29px;
+}
+
+QHeaderView::section {
+    color: black;
+    border: none;
+    background-color:#63B8FF;
+    border: 5px solid #63B8FF;
+    border-radius:2px;
+    border-color:#63B8FF;
+    border-right: 1px solid rgb(75, 120, 154);
+    border-bottom: 1px solid gray;
+
+}
+/*padding: 1px;border: none;border-bottom: 1px solid rgb(75, 120, 154);border-right: 1px solid rgb(75, 120, 154);border-bottom: 1px solid gray;
+background-color:rgba(75, 120, 154, 1);color:rgba(126,206,244,1); */
+/*选中item*/
+QTableWidget::item:selected{
+color:#DCDCDC;
+background:#1874CD;
+}
+
+/*
+悬浮item*/
+QTableWidget::item:hover{
+background:#5CACEE;
+}
+
